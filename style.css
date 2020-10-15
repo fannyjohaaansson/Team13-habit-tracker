@@ -8,22 +8,45 @@ section{
   background-color: #f29441;
   height: 100vh;
   width: 100%;
+
+  display: grid;
+
 }
 
 .header{
   color: #ffff;
   text-align: center;
   padding-top: 50%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+
 }
 
 .sub-header{
   color: #ffff;
 padding-top: 2rem;
 text-align: center;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+
 }
  
 .arrow{
   height: 4rem;
 
+margin-left: 42%;
 }
+
+.header-text {
+row-gap: 2rem;
+}
+
+.header-arrow {
+
+}
+
+
+
+
 
