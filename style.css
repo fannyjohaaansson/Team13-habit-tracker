@@ -1,79 +1,150 @@
-
 *{
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 
-#main-header{
+/* Pablos del  */
 
-  background-color: #f29441;
-  height: 100vh;
-  width: 100%;
-
-  display: grid;
-
-}
-
-.header{
-  color: #ffff;
-  text-align: center;
-  padding-top: 20%;
+.popUp {
+  border:  solid #f29441;
+  /* margin: 3rem; */
   font-family: 'Poppins', sans-serif;
+  width: 90vw;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+.title {
+  text-align: center;
+  border-bottom: 0.3rem solid #f29441;
+  margin: 3rem 25rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+
+}
+
+.frequency {
+  margin-left: 3rem;
+  margin-top: 5rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  font-size: 2.5rem;
-
 }
 
-.sub-header{
-  color: #ffff;
-padding-top: 2rem;
-text-align: center;
-font-family: 'Poppins', sans-serif;
-font-weight: 400;
-
-}
- 
-.arrow{
-  height: 4rem;
-
-margin-left: 42%;
+.reminders {
+  margin-left: 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
-.header-text {
-row-gap: 2rem;
-}
-
-.create-habit {
-  color: #f29441;
-  padding: 1rem;
-  background-color: #ffff;
-  border:solid;
-  border-color: #f29441;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
-  text-transform: uppercase;
-}
-
-.habit-button {
+.daysWeek {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-right: 3rem;
+  padding-left: 3rem;
 }
 
-.create-habit:hover {
-  color: #ffff;
+.daysWeek button {
+  background-color: #ffff;
+  border: 3px solid #f29441;
+  padding: 20px 30px;  
+  border-radius: 0.3rem;
+  margin-bottom: 5rem;
+  width: 10rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.2em ;
+  font-weight: 300;
+}
+
+.time-input {
+  width: 13rem;
+  cursor: pointer;
+}
+
+.setTime {
+  margin-left: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 65rem;
+}
+
+.setUpTime {
+  display: flex;
+  justify-content: space-between;
+  
+  padding-left: 3rem;
+
+}
+
+.setUpTime button {
+  border: 3px solid #f29441;
+  width: 14rem;
+  padding: 7px 20px;  
+  border-radius: 0.3rem;
+  margin-top: 3rem;
+  background-color: #ffff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.2em ;
+  font-weight: 300;
+  margin-right: 4.5rem;
+  
+}
+
+input {
+  border: 3px solid #f29441;
+  margin: 0;
+  background: transparent;
+  font: 13px sans-serif;
+}
+
+.motivation {
+  margin-top: 5rem;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 60rem;
+  margin-bottom: 3rem;
+  padding-left: 1rem; 
+}
+
+.add-habit-button {
+  margin-left: 57rem;
+  border: 3px solid #f29441; 
+  border-radius: 0.3rem;
+  padding: 20px 120px;
+  background-color: #f29441;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.4rem;
+
+}
+
+button:hover {
   background-color: #f29441;
 }
+/* Pablos del slut */
+
+
+
+
+/* Fannys del */
 
 .choose-habit {
 width: 90vw;
 height: 40vw ;
 display:grid ;
+margin: auto;
 border: solid;
 border-color: #f29441;
 /* border-radius: 1.2rem; */
 margin-top: 2rem;
+
 }
 
 .choose-header{
@@ -144,3 +215,95 @@ list-style-type: none;
   border-color: #f29441;
   border-radius:0.3rem ;
 }
+
+/* Fannys del slut*/
+
+
+/* Ephraims del */
+
+#main-header{
+
+  background-color: #f29441;
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+
+}
+
+.header{
+  color: #ffff;
+  text-align: center;
+  padding-top: 15%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+
+}
+
+.sub-header{
+  color: #ffff;
+padding-top: 2rem;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 1.5rem;
+}
+ 
+.arrow{
+  height: 4rem;
+  margin-left: 47%;
+}
+
+.header-text {
+row-gap: 2rem;
+}
+
+.create-habit-button {
+  font-size: 2rem;
+  color: #f29441;
+  padding: 1.5rem 2.5rem;
+  margin-top: 6rem;
+  background-color: #ffff;
+  border:solid;
+  border-color: #f29441;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.create-habit-button:hover {
+  color: #ffff;
+  background-color: #f29441;
+
+}
+
+
+#selected-habits{
+  color: #f29441;
+  margin-top: 3.5rem;
+  margin-bottom: 7rem;
+  margin-left:4rem;
+  text-align: center;
+  background-color: #f6f5f5;
+  border:0.2em solid #f29441;
+  height: 30vh;
+  width: 90vw;
+}
+
+hr{
+border: 1px solid #f29441;
+width: 30vw;
+margin-left: 30vw;
+}
+
+.not-created-habit{
+  color: darkgrey;
+  padding-top: 3.5rem;
+}
+
+/* Ephraims del slut */
