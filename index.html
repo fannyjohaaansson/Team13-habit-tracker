@@ -2,31 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habit tracker</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Habit Tracker</title>
 </head>
 
 <body>
 
-    <section>
+  <section id="main-header">
+    <div class="header-text">
+      <h1 class="header">Welcome to the Habit Tracker</h1>
+      <h4 class="sub-header">Track your habits and become a better person</h4>
+    </div>
 
-        <div class="header-text">
-            <h1 class="header">Welcome to the Habit Tracker</h1>
-            <h4 class="sub-header">Track your habits and become a better person</h4>
-        </div>
+    <div class="header-arrow">
+      <img class="arrow" src="down-arrow.svg" alt="image of an arrow pointing down">
+    </div>
 
-        <div class="header-arrow">
-            <img class="arrow" src="down-arrow.svg" alt="image of an arrow pointing down">
-        </div>
-    </section>
+  </section>
+  <div class="button-div">
+    <button class="create-habit-button">Create your habit</button>
+  </div>
+
+  <section id="selected-habits">
+    <p>YOUR HABITS</p>
+    <hr>
+    <p>YOUR HABITS WILL BE SHOWN HERE</p>
+    <p class="not-created-habit">You haven't created a habit yet</p>
+  </section>
+
+  <section class="choose-habit">
+    <header class="choose-header">
+      <h2 class="choose-h2">Choose your habit</h2>
+    </header>
+    <div class="choose-container">
+      <div class="choose-1">
+        <h4 class="choose-h4">Sports</h4>
+        <ul class="choose-li">
+          <li>Walk</li>
+          <li>Run</li>
+          <li>Yoga</li>
+          <li>Cycling</li>
+          <li>Stand up</li>
+          <li>Swim</li>
+          <li>Exercise</li>
+        </ul>
+      </div>
+      <div class="choose-2">
+        <h4 class="choose-h4">Health</h4>
+        <ul class="choose-li">
+          <li>Drink water</li>
+          <li>No smoking</li>
+          <li>No sugar</li>
+          <li>Eat fruits</li>
+          <li>Eat veggies</li>
+          <li>Meditate</li>
+          <li>Sleep more</li>
+        </ul>
+      </div>
+      <div class="choose-3">
+        <h4 class="choose-h4">Life</h4>
+        <ul class="choose-li">
+          <li>Call a friend</li>
+          <li>Meet a friend</li>
+          <li>Call your family</li>
+          <li>Save money</li>
+          <li>Wake up early</li>
+          <li>Smile more</li>
+          <li>Journaling</li>
+        </ul>
+      </div>
+
+      <footer class="custom-habit">
+        <h4 class="choose-h2">Custom habit</h4>
+        <input type="text" placeholder="Type here" class="choose-input">
+      </footer>
+    </div>
+  </section>
 
 
+  <section class="popUp">
+    <h1 class="title">CHOOSE YOUR GOALS</h1>
+    <div id="frequency">
+      <h2 class="frequency">FREQUENCY</h2>
+      <ul>
+        <li class="daysWeek">
+          <button class="monday">Monday</button>
+          <button class="tuesday">Tuesday</button>
+          <button class="wednesday">Wednesday</button>
+          <button class="thursday">Thursday</button>
+          <button class="friday">Friday</button>
+          <button class="saturday">Saturday</button>
+          <button class="sunday">Sunday</button>
+        </li>
+      </ul>
+    </div>
 
 
+    <div id="reminders">
+      <h2 class="reminders">REMINDERS</h2>
+
+      <div class="setTime">
+        <p>SET A TIME</p>
+        <input type="time" class="time-input"></input>
+      </div>
+
+      <ul>
+        <li class="setUpTime">
+          <button>Every 30 minutes</button>
+          <button>Every hour</button>
+          <button>Every other hour</button>
+          <button>Every 6 hour</button>
+          <button>Every 8 hours</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="motivation">
+      <p>MOTIVATION MESSAGE</p> <input class="motivation-input" type="text">
+    </div>
+
+
+    <div>
+      <button class="add-habit-button">ADD HABIT</button>
+    </div>
+  </section>
 </body>
 
 </html>
