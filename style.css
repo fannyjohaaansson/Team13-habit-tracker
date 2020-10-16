@@ -18,7 +18,7 @@
 .header{
   color: #ffff;
   text-align: center;
-  padding-top: 50%;
+  padding-top: 20%;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
@@ -64,10 +64,83 @@ row-gap: 2rem;
 .create-habit:hover {
   color: #ffff;
   background-color: #f29441;
-
 }
 
+.choose-habit {
+width: 90vw;
+height: 40vw ;
+display:grid ;
+border: solid;
+border-color: #f29441;
+/* border-radius: 1.2rem; */
+margin-top: 2rem;
+}
 
+.choose-header{
+text-align: center;
+padding-top: 2rem;
+justify-items: center;
+}
 
+.choose-container {
+display: inline-grid;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows:1fr 1fr 1fr 1fr  ;
+column-gap: 1em;
+width: 100%;
+margin-top: 5rem;
+}
 
+.choose-1 {
+grid-column-start: 1;
+grid-column-end: 2;
+border-right: solid;
+border-color: #f29441;
+}
 
+.choose-2 {
+grid-column-start: 2;
+grid-column-end: 3;
+border-right: solid;
+border-color: #f29441;
+}
+.choose-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.custom-habit {
+  grid-column-start: 2;
+  margin-top: 4rem;
+  text-align:center;
+}
+
+.choose-li {
+list-style-type: none; 
+}
+
+.choose-1 , .choose-2 , .choose-3 {
+  text-transform: uppercase;
+  padding-left: 6rem;
+  font-size: 1.1em ;
+  font-weight: 300;
+} 
+
+.choose-h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+}
+
+.choose-h2 {
+  font-size: 1.2em ;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.choose-input {
+  padding: 0.3rem;
+  border:solid;
+  border-color: #f29441;
+  border-radius:0.3rem ;
+}
