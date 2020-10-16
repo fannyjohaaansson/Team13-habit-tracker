@@ -2,9 +2,11 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-section{
+#main-header{
+
   background-color: #f29441;
   height: 100vh;
   width: 100%;
@@ -42,7 +44,26 @@ margin-left: 42%;
 row-gap: 2rem;
 }
 
-.header-arrow {
+.create-habit {
+  color: #f29441;
+  padding: 1rem;
+  background-color: #ffff;
+  border:solid;
+  border-color: #f29441;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+
+.habit-button {
+  display: flex;
+  justify-content: center;
+}
+
+.create-habit:hover {
+  color: #ffff;
+  background-color: #f29441;
 
 }
 
