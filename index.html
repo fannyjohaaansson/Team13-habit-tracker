@@ -13,11 +13,11 @@
 
 <body>
   <section id="main-header">
-      <h1 class="header">Welcome to the Habit Tracker</h1>
+    <h1 class="header">Welcome to the Habit Tracker</h1>
     <div class="header-text">
       <h4 class="sub-header">Track your habits and become a better YOU!</h4>
     </div>
-    
+
 
     <div class="header-arrow">
       <img class="arrow" src="down-arrow.svg" alt="image of an arrow pointing down">
@@ -25,88 +25,98 @@
 
   </section>
   <div class="button-div">
-    <button class="create-habit-button" id="mainHabitButton">Create your habit</button>
+    <button class="create-habit-button" id="myBtn">Create your habit</button>
   </div>
-  <div class="new-habit-div" >
-    <input class="newHabit" type="text" placeholder="Type your new habit">
+  <div id="myModal" class="modal">
+    <div class="input_div">
+
+      <div class="new-habit-div">
+        <span class="close">&times;</span>
+        <h1 class="popup-h1">Choose a habit</h1>
+        <input class="input" type="text" placeholder="Type your new habit">
+        <button class="addbutton"> Add Habit <i class="fas fa-plus"></i> </button>
+      </div>
+    </div>
   </div>
   <table class="table">
     <thead class="t-head">
-        <tr>
-            <th class="habits">Habits</th>
-            <th class="end">End</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-            <th>8</th>
-            <th>9</th>
-            <th>10</th>
-            <th>11</th>
-            <th>12</th>
-            <th>13</th>
-            <th>14</th>
-            <th>15</th>
-            <th>16</th>
-            <th>17</th>
-            <th>18</th>
-            <th>19</th>
-            <th>20</th>
-            <th>21</th>
-            <th>22</th>
-            <th>23</th>
-            <th>24</th>
-            <th>25</th>
-            <th>26</th>
-            <th>27</th>
-            <th>28</th>
-            <th>29</th>
-            <th>30</th>
-            <th>31</th>
-        </tr>
+      <tr>
+        <th class="habits">Habits</th>
+        <th class="end">End</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>11</th>
+        <th>12</th>
+        <th>13</th>
+        <th>14</th>
+        <th>15</th>
+        <th>16</th>
+        <th>17</th>
+        <th>18</th>
+        <th>19</th>
+        <th>20</th>
+        <th>21</th>
+        <th>22</th>
+        <th>23</th>
+        <th>24</th>
+        <th>25</th>
+        <th>26</th>
+        <th>27</th>
+        <th>28</th>
+        <th>29</th>
+        <th>30</th>
+        <th>31</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="habit-underline"> <input class="text-field" type="text"> </td>
-            <td> <input type="date"> </td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-            <td class="checkboxes" ><input type="checkbox"></td>
-        </tr>
+      <tr>
+        <td class="habit-underline"> <input class="text-field" type="text"> </td>
+        <td> <input type="date"> </td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+        <td class="checkboxes"><input type="checkbox"></td>
+      </tr>
     </tbody>
-</table>
-
+  </table>
+  <div class="container">
+  </div>
 </body>
 <script src="effects.js "></script>
+
 </html>
