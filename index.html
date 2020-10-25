@@ -30,7 +30,10 @@
   <div class="new-habit-div" >
     <input class="newHabit" type="text" placeholder="Type your new habit">
   </div>
-  <table class="table">
+
+  
+
+  <table class="table" id="mainTable">
     <thead class="t-head">
         <tr>
             <th class="habits">Habits</th>
@@ -105,8 +108,74 @@
             <td class="checkboxes" ><input type="checkbox"></td>
         </tr>
     </tbody>
+<<<<<<< Updated upstream
 </table>
 
+=======
+  </table>
+  <div class="container">
+  </div>
+
+  <!-- new table -->
+  <div>
+    <table id="myTable">
+    </table>
+  </div>
+<div style="display:none">
+    <table>
+      <tr id="rowTemplate">
+            <td>
+                <input type="button" value="Remove" onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);" />
+            </td>
+            
+            <td>                  
+                    <th class="habits">Habits</th>
+                    <th class="end">End</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>19</th>
+                    <th>20</th>
+                    <th>21</th>
+                    <th>22</th>
+                    <th>23</th>
+                    <th>24</th>
+                    <th>25</th>
+                    <th>26</th>
+                    <th>27</th>
+                    <th>28</th>
+                    <th>29</th>
+                    <th>30</th>
+                    <th>31</th>
+              </td>
+              <tbody>
+             <tr>
+            
+             </tr>
+              </tbody>         
+    </table>
+</div>
+<span id="addRowHere">  
+  <input type="button" id="moreFields" value="Add new habit" />
+  
+</span>
+<!-- end of new table -->
+>>>>>>> Stashed changes
 </body>
 <script src="effects.js "></script>
 </html>
