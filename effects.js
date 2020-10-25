@@ -5,6 +5,7 @@ let popHabit = document.getElementsByClassName("popUp");
 let popTime = document.getElementsByClassName("choose-habit"); 
 let showUp = document.getElementsByClassName("appear");
 
+<<<<<<< Updated upstream
 =======
 
 document.getElementById('moreFields').onclick = addMoreFields;    //    set binding
@@ -86,4 +87,23 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
  }
+>>>>>>> Stashed changes
+=======
+
+// document.write("<table border=1>")
+//   for (row=1; row<=1; row++) {
+//      document.write("<tr>")
+//      for (col=1; col<=31; col++) {
+//           document.write("<td>R" + row + "<br>C" + col + "</td>")
+//       }
+//       document.write("</tr>")
+//  }
+//  document.write("</table>")
+
+function addHabit() {
+  var item = document.getElementById("mainTable").value
+  var newHabit = document.createElement("mainTable")
+  newHabit.innerHTML = item 
+  document.getElementById("mainTable").appendChild(newHabit)
+}
 >>>>>>> Stashed changes
