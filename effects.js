@@ -17,12 +17,6 @@ function addRow() {
     td.appendChild(input)
     tr.appendChild(td)
 
-
-
-
-    // Displaying the value
-    // alert(inputVal);
-
     // 2. Add Start/End
     var td = document.createElement('td');
     var inputDate = document.createElement('input');
@@ -41,22 +35,13 @@ function addRow() {
     tableBody.appendChild(tr);
 
     modal.style.display = "none";
-
-
-
+    document.getElementById('myInput').value = '';
 }
-
-// function check() {
-//     if (input.value != "") {
-//         new item(input.value);
-//         input.value = "";
-//     }
-// }
 
 addButton.addEventListener('click', addRow);
 window.addEventListener('keydown', (e) => {
     if (e.which == 13) {
-        check();
+        addRow();
     }
 
 })

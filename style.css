@@ -66,6 +66,7 @@
   border-color: #f29441;
   border-radius: 1rem;
   text-transform: uppercase;
+  margin-bottom: 5rem;
 }
 
 .button-div {
@@ -100,55 +101,55 @@ hr {
 
 /* table css  */
 
-.table {
-  width: 100vw;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+table {
+  border-collapse: collapse;
+  width: 90vw;
+}
+
+#table {
   border: 2px solid #f29441;
+  margin: auto;
+width: 90vw;
 }
 
-/* th,
-thead,
-tbody {
-  border: 1px solid black;
-}
 
 tr {
-  border: 2px solid red;
-  height: 10px;
-  background-color: royalblue;
+  
+}
+
+td{
+  padding-left: 0.2rem;  
+  Border-top: 2px solid #f29441; 
+  margin-top: 2rem;
+}
+
+th{
+border-bottom: 2px solid #f29441; 
+height: 2rem;
+text-align: left;
+padding-left: 0.2rem;  
+/* border-right: 2px solid #f29441;  */
+
+}
+
+th, td {
+  padding: 5px; 
+  border-right: 2px solid #f29441; 
+}
+
+
+
+.habits, .end {
+width: 2rem;
+font-size: 1.2rem;
+font-weight: 600; 
+text-transform: uppercase;
+}
+
+/* .end{
+width: 2rem;
+
 } */
-
-th,
-td,
-thead,
-tbody,
-tr {
-  border: 1px solid black;
-}
-
-.habits {
-  padding-right: 5rem;
-}
-
-.end {
-  width: 10vw;
-}
-
-.habit-underline {
-  border-bottom: 1px solid black;
-  width: 15vw;
-}
-
-.text-field {
-  border: none;
-  width: 15vw;
-}
-
-.checkboxes {
-  padding-left: 10px;
-}
-
 
 /* TEST */
 
@@ -209,6 +210,7 @@ text-align: center;
   height: 3rem;
   display: block;
   margin: auto;
+  padding-left: 1rem; 
 } 
 
 .popup-h1 { 
@@ -230,4 +232,8 @@ margin-top: 2rem;
 text-transform: uppercase;
 font-weight: 400;
 border-radius: 5px;
+}
+
+.container {
+  height: 10rem; 
 }
