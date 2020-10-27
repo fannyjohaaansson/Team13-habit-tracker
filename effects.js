@@ -1,11 +1,12 @@
 const addButton = document.querySelector('.addbutton');
-const input = document.querySelector('.input')
-const container = document.querySelector('.container')
+const input = document.querySelector('.input');
+const container = document.querySelector('.container');
+
+
 
 function addRow() {
     var tableBody = document.querySelector("#table tbody");
     var tr = document.createElement('tr');
-
 
     // 1. Add habit table date(td)
     var td = document.createElement('td');
@@ -28,15 +29,23 @@ function addRow() {
         var td = document.createElement('td');
         var input = document.createElement('input')
         input.type = 'checkbox';
-
         td.appendChild(input)
         tr.appendChild(td)
     }
+    var td = document.createElement('td');
+    let removeButton = document.createElement('button');
+    removeButton.onclick = trash;
+    removeButton.innerHTML = "REMOVE";
+    removeButton.classList.toggle('removeButton');
+    td.appendChild(removeButton)
+    tr.appendChild(td)
+
     tableBody.appendChild(tr);
 
     modal.style.display = "none";
     document.getElementById('myInput').value = '';
 }
+
 
 addButton.addEventListener('click', addRow);
 window.addEventListener('keydown', (e) => {
@@ -45,6 +54,9 @@ window.addEventListener('keydown', (e) => {
     }
 
 })
+
+
+
 
 // TEST
 
@@ -66,3 +78,10 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+function trash() {
+    console.log(this);
+    const wrapper = this.closest("tr");
+    wrapper.remove();
+
+};
