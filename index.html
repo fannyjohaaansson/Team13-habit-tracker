@@ -33,12 +33,13 @@
       <div class="new-habit-div">
         <span class="close">&times;</span>
         <h1 class="popup-h1">Choose a habit</h1>
-        <input class="input" type="text" placeholder="Type your new habit">
+        <input class="input" id="myInput" type="text" placeholder="Type your new habit">
         <button class="addbutton"> Add Habit <i class="fas fa-plus"></i> </button>
+
       </div>
     </div>
   </div>
-  <table class="table">
+  <table id="table">
     <thead class="t-head">
       <tr>
         <th class="habits">Habits</th>
@@ -77,8 +78,8 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td class="habit-underline"> <input class="text-field" type="text"> </td>
+      <!-- <tr id="habitRow"> -->
+      <!-- <td class="habit-underline"> <input class="text-field" type="text"> </td>
         <td> <input type="date"> </td>
         <td class="checkboxes"><input type="checkbox"></td>
         <td class="checkboxes"><input type="checkbox"></td>
@@ -110,12 +111,13 @@
         <td class="checkboxes"><input type="checkbox"></td>
         <td class="checkboxes"><input type="checkbox"></td>
         <td class="checkboxes"><input type="checkbox"></td>
-        <td class="checkboxes"><input type="checkbox"></td>
-      </tr>
+        <td class="checkboxes"><input type="checkbox"></td> -->
+      <!-- </tr> -->
     </tbody>
   </table>
   <div class="container">
   </div>
+
 </body>
 <script src="effects.js "></script>
 
