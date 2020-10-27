@@ -17,16 +17,16 @@ class item {
         let itemBox = document.createElement('div');
         itemBox.classList.add('item');
 
-        let removeButton = document.createElement('button');
-        removeButton.innerHTML = "REMOVE";
-        removeButton.classList.add('removeButton');
+        // let removeButton = document.createElement('button');
+        // removeButton.innerHTML = "REMOVE";
+        // removeButton.classList.add('removeButton');
 
         container.appendChild(itemBox);
 
         itemBox.appendChild(input);
         itemBox.appendChild(removeButton);
 
-        removeButton.addEventListener('click', () => this.remove(itemBox));
+        // removeButton.addEventListener('click', () => this.remove(itemBox));
     }
 
     remove(item) {
