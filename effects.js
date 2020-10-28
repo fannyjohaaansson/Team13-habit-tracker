@@ -58,7 +58,7 @@ window.addEventListener('keydown', (e) => {
 
 
 
-// TEST
+// Popup
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
